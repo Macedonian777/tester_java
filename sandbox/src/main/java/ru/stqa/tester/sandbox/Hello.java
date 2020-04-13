@@ -1,3 +1,4 @@
+package ru.stqa.tester.sandbox;
 
 public class Hello {
     public static void main(String[] args) {
