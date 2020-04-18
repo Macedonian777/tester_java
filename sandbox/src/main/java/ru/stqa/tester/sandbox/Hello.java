@@ -15,10 +15,10 @@ public class Hello {
         David("Iosik");
 
           Square s = new Square (10);
-          System.out.println("Площадь квадрата со стороной " + s.l + " = " + ploshad(s));
+          System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.ploshad());
 
             Rectangle r = new Rectangle(5,10);
-            System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + pryamougolnik(r));
+            System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.pryamougolnik());
     }
     public static void ride(){
       System.out.print("I ride ");
@@ -29,13 +29,5 @@ public class Hello {
     public static void David (String somebody){
       System.out.println("and I love my little son " +  somebody +"!");
     }
-    public static double ploshad(Square s){
-      return s.l * s.l;
-
-    }
-    public static double pryamougolnik (Rectangle r){
-      return r.a * r.b;
-    }
-
 }
 	

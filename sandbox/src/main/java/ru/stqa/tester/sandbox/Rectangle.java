@@ -8,4 +8,7 @@ public class Rectangle {
       this.a = a;
       this.b = b;
    }
+      public double pryamougolnik(){
+      return this.a * this.b;
+   }
 }
