@@ -14,12 +14,11 @@ public class Hello {
         world();
         David("Iosik");
 
-        double l = 10;
-      System.out.println("Площадь квадрата со стороной " + l + " = " + ploshad(l));
+          Square s = new Square (10);
+          System.out.println("Площадь квадрата со стороной " + s.l + " = " + ploshad(s));
 
-      double a = 5;
-      double b = 10;
-      System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + pryamougolnik(a,b));
+            Rectangle r = new Rectangle(5,10);
+            System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + pryamougolnik(r));
     }
     public static void ride(){
       System.out.print("I ride ");
@@ -30,12 +29,12 @@ public class Hello {
     public static void David (String somebody){
       System.out.println("and I love my little son " +  somebody +"!");
     }
-    public static double ploshad(double len){
-      return len*len;
+    public static double ploshad(Square s){
+      return s.l * s.l;
 
     }
-    public static double pryamougolnik (double a, double b){
-      return a*b;
+    public static double pryamougolnik (Rectangle r){
+      return r.a * r.b;
     }
 
 }
